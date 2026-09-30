@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NSFW — SUMRART</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main class="site">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <p class="small-text">✦ adults only ✦</p>
+
+            <h1>NSFW</h1>
+
+            <p class="subtitle">
+                i knew you'd be here. naaastyyyy
+            </p>
+
+        </header>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+
+            <a href="index.html">home</a>
+            <a href="art.html">art</a>
+            <a href="ocs.html">my ocs</a>
+            <a href="nsfw.html">nsfw</a>
+
+        </nav>
+
+
+        <!-- WARNING -->
+
+        <section class="content-warning">
+
+            <h2>✦ 18+ only ✦</h2>
+
+            <p>
+                this section contains mature and sexually explicit
+                artwork intended for adults only.
+            </p>
+
+            <p>
+                if you are under 18, please leave this section.
+            </p>
+
+            <button onclick="showGallery()">
+                i am 18 or older - enter
+            </button>
+
+        </section>
+
+
+        <!-- GALLERY -->
+
+        <section class="nsfw-gallery" id="gallery">
+
+            <h2>✦ mature artwork ✦</h2>
+
+            <p class="section-description">
+                artwork that lives here because Tumblr said no.
+            </p>
+
+
+            <div class="gallery">
+
+
+                <article class="art-card variant-card">
+
+                    <div class="variant-image">
+
+                        <a id="link-one" href="images/nsfw2.png" target="_blank">
+
+                            <img id="artwork-one" src="images/nsfw2.png">
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="art-info">
+
+
+                        <div class="variant-buttons">
+
+                            <button class="active" onclick="changeVariant(
+            'artwork-one',
+            'images/nsfw2.png',
+            this
+        )">
+                                light skin
+                            </button>
+
+                            <button onclick="changeVariant(
+            'artwork-one',
+            'images/nsfw1.png',
+            this
+        )">
+                                dark skin
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="art-card variant-card">
+
+                    <div class="variant-image">
+
+                        <a id="link-two" href="images/uro1.png" target="_blank">
+
+                            <img id="artwork-two" src="images/uro1.png">
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="art-info">
+
+
+                        <div class="variant-buttons">
+
+                            <button class="active" onclick="changeVariant(
+            'artwork-two',
+            'images/uro1.png',
+            this
+        )">
+                                censored
+                            </button>
+
+                            <button onclick="changeVariant(
+            'artwork-two',
+            'images/uro2.png',
+            this
+        )">
+                                uncensored
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="art-card variant-card">
+
+                    <div class="variant-image">
+
+                        <a id="link-three" href="images/nsfw3.png" target="_blank">
+
+                            <img id="artwork-three" src="images/nsfw3.png">
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="art-info">
+
+
+                        <div class="variant-buttons">
+
+                            <button class="active" onclick="changeVariant(
+            'artwork-three',
+            'images/nsfw3.png',
+            this
+        )">
+                                covered
+                            </button>
+
+                            <button onclick="changeVariant(
+            'artwork-three',
+            'images/nsfw4.png',
+            this
+        )">
+                                show me dat ass
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>☙ ✦ ❧</p>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- SMALL SCRIPT -->
+
+    <script>
+
+        function showGallery() {
+
+            document.getElementById("gallery").style.display = "block";
+
+            document.querySelector(".content-warning").style.display = "none";
+
+        }
+
+
+        function changeVariant(imageId, imageSource, button) {
+
+            document.getElementById(imageId).src = imageSource;
+
+            const linkId = imageId.replace("artwork", "link");
+
+            document.getElementById(linkId).href = imageSource;
+
+
+            const buttons = button.parentElement.querySelectorAll("button");
+
+            buttons.forEach(function (btn) {
+
+                btn.classList.remove("active");
+
+            });
+
+
+            button.classList.add("active");
+
+        }
+
+    </script>
+
+
+</body>
+
+
+
+</html>

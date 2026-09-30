@@ -1,0 +1,1045 @@
+/* ========================================
+   FOREST SHRINE
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=IM+Fell+English:ital@0;1&display=swap');
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background:
+        linear-gradient(rgba(5, 10, 7, 0.78),
+            rgba(5, 10, 7, 0.88)),
+        url("images/forest.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #d8d0b9;
+
+    font-family: "IM Fell English", Georgia, serif;
+
+    min-height: 100vh;
+}
+
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.site {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 60px auto;
+
+    padding: 45px;
+
+    background:
+        linear-gradient(rgba(28, 35, 27, 0.94),
+            rgba(18, 23, 18, 0.97));
+
+    border: 1px solid #5b614b;
+
+    box-shadow:
+        0 0 30px rgba(0, 0, 0, 0.7);
+
+    position: relative;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.header {
+    text-align: center;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #555b47;
+}
+
+.small-text {
+    font-size: 0.85rem;
+
+    color: #9b9b76;
+
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin: 10px 0;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 3rem;
+
+    font-weight: 500;
+
+    letter-spacing: 5px;
+
+    color: #d8d0b9;
+}
+
+.subtitle {
+    font-style: italic;
+
+    color: #9f9c86;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navigation {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    padding: 20px 0 30px;
+}
+
+.navigation a {
+    color: #b4aa89;
+
+    text-decoration: none;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 2px;
+
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #a64b43;
+}
+
+
+/* ---------- INTRO ---------- */
+
+.intro {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 45px;
+}
+
+.intro-text,
+.little-note {
+    padding: 25px;
+
+    border: 1px solid #464d3c;
+
+    background: rgba(8, 12, 9, 0.35);
+}
+
+h2 {
+    font-family: "Cinzel", serif;
+
+    font-weight: 400;
+
+    color: #b9b18e;
+
+    letter-spacing: 2px;
+}
+
+.intro p {
+    line-height: 1.8;
+
+    color: #c4bea9;
+}
+
+
+/* ---------- LITTLE NOTE ---------- */
+
+.little-note {
+    font-size: 0.9rem;
+
+    color: #a8a48d;
+}
+
+.little-note p:first-child {
+    color: #a64b43;
+
+    font-family: "Cinzel", serif;
+
+    letter-spacing: 2px;
+}
+
+
+/* ---------- ART ---------- */
+
+.featured {
+    text-align: center;
+
+    margin-top: 30px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    margin-top: 50px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #464d3c;
+
+    text-align: center;
+
+    font-size: 0.8rem;
+
+    color: #777966;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    .site {
+        width: 94%;
+
+        padding: 25px;
+
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.featured-art {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: 1px solid #555b47;
+
+    background: rgba(8, 12, 9, 0.6);
+
+    box-shadow:
+        0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.featured-art img {
+    display: block;
+
+    width: 100%;
+
+    max-height: 650px;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+}
+
+/* ========================================
+   ART PAGE
+   ======================================== */
+
+.page-intro {
+    max-width: 650px;
+
+    margin: 20px auto 55px;
+
+    text-align: center;
+}
+
+.page-intro p {
+    color: #aaa58f;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- ART SECTIONS ---------- */
+
+.art-section {
+    margin-bottom: 70px;
+}
+
+.art-section>h2 {
+    margin-bottom: 5px;
+
+    border-bottom: 1px solid #464d3c;
+
+    padding-bottom: 10px;
+}
+
+.section-description {
+    color: #858774;
+
+    font-style: italic;
+
+    margin-bottom: 25px;
+}
+
+
+/* ---------- GALLERY ---------- */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ---------- ART CARDS ---------- */
+
+.art-card {
+    background: #171d16;
+
+    border: 1px solid #464d3c;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.45);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+
+    overflow: hidden;
+}
+
+.art-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #77765b;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- IMAGES ---------- */
+
+.art-card img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: 600px;
+
+    object-fit: contain;
+
+    background: #101610;
+}
+
+
+/* ---------- ART INFORMATION ---------- */
+
+.art-info {
+    padding: 15px 18px;
+}
+
+.art-info h3 {
+    margin: 0 0 5px;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+    color: #c5bd9d;
+
+    letter-spacing: 1px;
+}
+
+.art-info p {
+    margin: 0;
+
+    color: #777966;
+
+    font-size: 0.85rem;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .art-card img {
+        height: auto;
+        min-height: 300px;
+    }
+
+}
+
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+
+.about-layout {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    margin: 30px 0 60px;
+}
+
+
+/* ---------- MAIN ABOUT ---------- */
+
+.about-main {
+    padding: 30px;
+
+    background: rgba(8, 12, 9, 0.35);
+
+    border: 1px solid #464d3c;
+}
+
+.about-main p {
+    color: #c4bea9;
+
+    line-height: 1.9;
+}
+
+.about-main strong {
+    color: #b9b18e;
+
+    font-weight: normal;
+}
+
+
+/* ---------- CURRENTLY NOTE ---------- */
+
+.about-note {
+    padding: 25px;
+
+    background:
+        linear-gradient(rgba(73, 66, 43, 0.15),
+            rgba(73, 66, 43, 0.05));
+
+    border: 1px solid #55513d;
+
+    align-self: start;
+
+    transform: rotate(1deg);
+}
+
+.about-note h2 {
+    margin-top: 0;
+
+    font-size: 1.2rem;
+
+    color: #a64b43;
+}
+
+.about-note p {
+    color: #aaa58f;
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+}
+
+
+/* ---------- INTERESTS ---------- */
+
+.interests {
+    margin-bottom: 60px;
+}
+
+.interest-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.interest-list span {
+    padding: 8px 14px;
+
+    border: 1px solid #464d3c;
+
+    background: rgba(8, 12, 9, 0.4);
+
+    color: #aaa58f;
+
+    font-size: 0.85rem;
+}
+
+
+/* ---------- LINKS ---------- */
+
+.links {
+    padding-top: 20px;
+
+    border-top: 1px solid #464d3c;
+
+    text-align: center;
+}
+
+.links>p {
+    color: #858774;
+
+    font-style: italic;
+}
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #b4aa89;
+
+    text-decoration: none;
+
+    font-family: "Cinzel", serif;
+
+    letter-spacing: 1px;
+
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #a64b43;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* ========================================
+   NSFW PAGE
+   ======================================== */
+
+.content-warning {
+    max-width: 600px;
+
+    margin: 60px auto;
+
+    padding: 45px;
+
+    text-align: center;
+
+    background: rgba(8, 12, 9, 0.55);
+
+    border: 1px solid #55513d;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.content-warning h2 {
+    color: #a64b43;
+
+    margin-top: 0;
+}
+
+.content-warning p {
+    color: #aaa58f;
+
+    line-height: 1.8;
+}
+
+.content-warning button {
+    margin-top: 20px;
+
+    padding: 12px 22px;
+
+    border: 1px solid #77765b;
+
+    background: #171d16;
+
+    color: #c5bd9d;
+
+    font-family: "IM Fell English", Georgia, serif;
+
+    font-size: 0.95rem;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s,
+        color 0.3s,
+        border-color 0.3s;
+}
+
+.content-warning button:hover {
+    background: #292c20;
+
+    color: #d8d0b9;
+
+    border-color: #a64b43;
+}
+
+
+/* ---------- HIDDEN GALLERY ---------- */
+
+.nsfw-gallery {
+    display: none;
+
+    margin-top: 40px;
+}
+
+
+/* ========================================
+   HOME — LATEST ART NOTE
+   ======================================== */
+
+.little-note {
+    position: relative;
+
+    padding: 32px 18px 18px;
+
+    background:
+        linear-gradient(rgba(73, 66, 43, 0.18),
+            rgba(73, 66, 43, 0.05));
+
+    border: 1px solid #55513d;
+
+    align-self: start;
+
+    box-shadow:
+        5px 8px 18px rgba(0, 0, 0, 0.45);
+}
+
+.little-note::before {
+    content: "";
+
+    position: absolute;
+
+    top: 8px;
+    left: 50%;
+
+    width: 11px;
+    height: 11px;
+
+    background: #7d302d;
+
+    border: 1px solid #a64b43;
+
+    border-radius: 50%;
+
+    transform: translateX(-50%);
+
+    box-shadow:
+        1px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.little-note .note-title {
+    margin-top: 0;
+
+    margin-bottom: 15px;
+
+    color: #a64b43;
+
+    font-family: "Cinzel", serif;
+
+    letter-spacing: 2px;
+
+    font-size: 0.9rem;
+}
+
+.little-note img {
+    display: block;
+
+    width: 100%;
+
+    max-height: 250px;
+
+    object-fit: contain;
+
+    background: #101610;
+
+    margin-bottom: 12px;
+}
+
+.little-note .art-title {
+    margin: 0;
+
+    color: #c5bd9d;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 0.95rem;
+
+    letter-spacing: 1px;
+}
+
+.little-note .art-date {
+    margin: 5px 0 0;
+
+    color: #777966;
+
+    font-size: 0.8rem;
+}
+
+/* ========================================
+   ART — SEE MORE
+   ======================================== */
+
+.hidden-gallery {
+    display: none;
+
+    margin-top: 25px;
+}
+
+
+.see-more {
+    display: block;
+
+    margin: 30px auto 0;
+
+    padding: 10px 22px;
+
+    background: transparent;
+
+    border: 1px solid #555b47;
+
+    color: #aaa58f;
+
+    font-family: "IM Fell English", Georgia, serif;
+
+    font-size: 0.95rem;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s,
+        border-color 0.3s,
+        background 0.3s;
+}
+
+
+.see-more:hover {
+
+    color: #d8d0b9;
+
+    border-color: #a64b43;
+
+    background: rgba(73, 66, 43, 0.15);
+
+}
+
+/* ========================================
+   ARTWORK VARIANT BUTTONS
+   ======================================== */
+
+.variant-buttons {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 14px;
+}
+
+
+.variant-buttons button {
+    padding: 7px 12px;
+
+    background: #171d16;
+
+    border: 1px solid #555b47;
+
+    color: #aaa58f;
+
+    font-family: "IM Fell English", Georgia, serif;
+
+    font-size: 0.8rem;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s,
+        color 0.3s,
+        border-color 0.3s;
+}
+
+
+.variant-buttons button:hover {
+    background: #292c20;
+
+    border-color: #a64b43;
+
+    color: #d8d0b9;
+}
+
+.variant-buttons button.active {
+
+    background: #292c20;
+
+    border-color: #a64b43;
+
+    color: #d8d0b9;
+
+    box-shadow:
+        inset 0 -2px 0 #a64b43;
+
+}
+
+/* ========================================
+   HOME — ABOUT
+   ======================================== */
+
+.home-about {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    margin: 30px 0 60px;
+
+}
+
+
+/* ---------- ABOUT TEXT ---------- */
+
+.home-about .about-main {
+
+    padding: 30px;
+
+    background: rgba(8, 12, 9, 0.35);
+
+    border: 1px solid #464d3c;
+
+}
+
+
+.home-about .about-main p {
+
+    color: #c4bea9;
+
+    line-height: 1.9;
+
+}
+
+
+/* ---------- CURRENTLY NOTE ---------- */
+
+.home-note {
+
+    padding: 25px;
+
+    background:
+        linear-gradient(rgba(73, 66, 43, 0.15),
+            rgba(73, 66, 43, 0.05));
+
+    border: 1px solid #55513d;
+
+    align-self: start;
+
+    transform: rotate(-1deg);
+
+    box-shadow:
+        5px 8px 18px rgba(0, 0, 0, 0.4);
+
+}
+
+
+.home-note h2 {
+
+    margin-top: 0;
+
+    color: #a64b43;
+
+    font-size: 1.2rem;
+
+}
+
+
+.home-note p {
+
+    color: #aaa58f;
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    .home-about {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ---------- TEXT LINKS ---------- */
+
+.intro-text a {
+    color: #b4aa89;
+
+    text-decoration: underline;
+    text-decoration-color: #77765b;
+    text-underline-offset: 3px;
+
+    transition:
+        color 0.3s,
+        text-decoration-color 0.3s;
+}
+
+.intro-text a:hover {
+    color: #a64b43;
+
+    text-decoration-color: #a64b43;
+}
+
+/* ========================================
+   OC PAGE — EMPTY STATE
+   ======================================== */
+
+.empty-page {
+
+    max-width: 600px;
+
+    margin: 70px auto;
+
+    padding: 55px 40px;
+
+    text-align: center;
+
+    background:
+        rgba(8, 12, 9, 0.35);
+
+    border: 1px solid #464d3c;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.35);
+
+}
+
+
+.empty-symbol {
+
+    margin-bottom: 25px;
+
+    color: #a64b43;
+
+    font-size: 1.2rem;
+
+    letter-spacing: 8px;
+
+}
+
+
+.empty-page h2 {
+
+    margin-top: 0;
+
+    color: #b9b18e;
+
+}
+
+
+.empty-page p {
+
+    color: #aaa58f;
+
+    line-height: 1.8;
+
+}
+
+
+.empty-page .empty-small {
+
+    margin-top: 30px;
+
+    color: #777966;
+
+    font-style: italic;
+
+    font-size: 0.9rem;
+
+}
+
+.nsfw-gallery .section-description {
+
+    margin-bottom: 35px;
+
+    color: #858774;
+
+    font-style: italic;
+
+}
+
+
+.art-card a {
+    display: block;
+}
+
+.art-card a img {
+    transition: opacity 0.3s ease;
+}
+
+.art-card a:hover img {
+    opacity: 0.8;
+}
+
+
+.little-note a {
+    display: block;
+}
+
+.little-note a img {
+    transition: opacity 0.3s ease;
+}
+
+.little-note a:hover img {
+    opacity: 0.8;
+}
