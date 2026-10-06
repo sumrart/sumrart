@@ -1043,3 +1043,281 @@ footer {
 .little-note a:hover img {
     opacity: 0.8;
 }
+
+
+/* ========================================
+   OC PAGE
+   ======================================== */
+
+
+/* ---------- CHARACTER PROFILE ---------- */
+
+.oc-profile {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.5fr;
+
+    gap: 35px;
+
+    margin: 40px 0 70px;
+
+    align-items: start;
+
+}
+
+
+.oc-portrait {
+
+    padding: 12px;
+
+    background: #171d16;
+
+    border: 1px solid #464d3c;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.45);
+
+}
+
+
+.oc-portrait img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+
+.oc-info {
+
+    padding: 25px;
+
+    background: rgba(8, 12, 9, 0.35);
+
+    border: 1px solid #464d3c;
+
+}
+
+
+.oc-info h2 {
+
+    margin-top: 0;
+
+}
+
+
+.oc-intro {
+
+    color: #c4bea9;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+}
+
+
+.oc-details {
+
+    border-top: 1px solid #464d3c;
+
+    padding-top: 15px;
+
+}
+
+
+.oc-details p {
+
+    margin: 10px 0;
+
+    color: #aaa58f;
+
+    line-height: 1.6;
+
+}
+
+
+.oc-details p {
+
+    display: grid;
+
+    grid-template-columns: 140px 1fr;
+
+    gap: 15px;
+
+    margin: 10px 0;
+
+    color: #aaa58f;
+
+    line-height: 1.6;
+
+}
+
+
+.oc-details strong {
+
+    color: #b9b18e;
+
+    font-family: "Cinzel", serif;
+
+    font-weight: normal;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* ---------- LORE ---------- */
+
+.oc-lore {
+
+    margin-bottom: 70px;
+
+}
+
+
+.oc-lore h2 {
+
+    border-bottom: 1px solid #464d3c;
+
+    padding-bottom: 10px;
+
+}
+
+
+.lore-placeholder {
+
+    padding: 30px;
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    background: rgba(8, 12, 9, 0.35);
+
+    border: 1px solid #464d3c;
+
+}
+
+
+.lore-placeholder p {
+
+    color: #aaa58f;
+
+    line-height: 1.8;
+
+}
+
+
+.lore-placeholder .empty-small {
+
+    color: #777966;
+
+    font-style: italic;
+
+    font-size: 0.9rem;
+
+}
+
+
+/* ---------- OC ART ---------- */
+
+.oc-art-section {
+
+    margin-bottom: 70px;
+
+}
+
+
+/* ---------- COMICS ---------- */
+
+.oc-comics {
+
+    margin-bottom: 60px;
+
+}
+
+
+.comic-gallery {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+.comic-page {
+
+    background: #171d16;
+
+    border: 1px solid #464d3c;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+
+}
+
+
+.comic-page:hover {
+
+    transform: translateY(-4px);
+
+    border-color: #77765b;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.6);
+
+}
+
+
+.comic-page img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    .oc-profile {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .oc-details p {
+
+        grid-template-columns: 1fr;
+
+        gap: 3px;
+
+    }
+
+
+    .oc-details strong {
+
+        display: block;
+
+    }
+
+}

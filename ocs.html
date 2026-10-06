@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My OCs — SUMRART</title>
+
     <link rel="icon" type="image/png" href="eye.png">
 
     <link rel="stylesheet" href="style.css">
@@ -22,6 +23,8 @@
         <!-- HEADER -->
 
         <header class="header">
+
+            <p class="small-text">✦ original characters ✦</p>
 
             <h1>My OCs</h1>
 
@@ -43,46 +46,263 @@
         </nav>
 
 
-        <!-- EMPTY OC PAGE -->
 
-        <section class="empty-page">
+        <!-- CHARACTER PROFILE -->
 
-            <p class="empty-symbol">☙ ✦ ❧</p>
+        <section class="oc-profile">
 
-            <h2>nothing here yet</h2>
 
-            <p>
-                this little corner is still waiting for its
-                inhabitants.
-            </p>
+            <div class="oc-portrait">
 
-            <p>
-                i have an OC or two lurking somewhere,
-                but their lore is not ready to be released
-                into the wild just yet.
-            </p>
+                <a href="images/oc.png" target="_blank">
 
-            <p class="empty-small">
-                come back when i've gathered the courage to post them.
-            </p>
+                    <img src="images/oc.png">
+
+                </a>
+
+            </div>
+
+
+            <div class="oc-info">
+
+                <h2>✦ LIKHO ✦</h2>
+
+                <p class="oc-intro">
+                    the mysterious ginger creature of the woods.
+                </p>
+
+
+                <div class="oc-details">
+
+                    <p>
+                        <strong>age</strong>
+                        ??
+                    </p>
+
+                    <p>
+                        <strong>cursed technique</strong>
+                        ???
+                    </p>
+
+                    <p>
+                        <strong>affiliation</strong>
+                        none
+                    </p>
+
+                </div>
+
+            </div>
+
 
         </section>
 
 
-        <!-- FOOTER -->
 
-        <footer>
+        <!-- LORE -->
 
-            <p>
-                made with love & too much time
-            </p>
+        <section class="oc-lore">
 
-            <p>☙ ✦ ❧</p>
+            <h2>✦ lore ✦</h2>
 
-        </footer>
+            <div class="lore-placeholder">
+
+                <p>
+                    the lore is not here yet.
+                </p>
+
+                <p>
+                    she's got a whole story.
+                    i'm just not ready to put it here.
+                </p>
+
+                <p class="empty-small">
+                    come back when i've finally written the damn thing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OC ART -->
+
+        <section class="art-section oc-art-section">
+
+            <h2>art</h2>
+
+
+            <!-- VISIBLE ART nothing to put here yet -->
+
+
+
+
+
+            <!-- COMICS -->
+
+            <section class="art-section oc-comics">
+
+                <h2>comics</h2>
+
+                <p class="section-description">
+                    little stories featuring her and whoever else
+                    happens to wander into the panel.
+                </p>
+
+
+                <!-- FIRST FOUR COMIC PAGES -->
+
+                <div class="comic-gallery">
+
+
+                    <article class="comic-page">
+
+                        <a href="images/1.png" target="_blank">
+
+                            <img src="images/1.png" alt="Comic page 1">
+
+                        </a>
+
+                    </article>
+
+
+                    <article class="comic-page">
+
+                        <a href="images/2.png" target="_blank">
+
+                            <img src="images/2.png" alt="Comic page 2">
+
+                        </a>
+
+                    </article>
+
+
+                    <article class="comic-page">
+
+                        <a href="images/3.png" target="_blank">
+
+                            <img src="images/3.png" alt="Comic page 3">
+
+                        </a>
+
+                    </article>
+
+
+                    <article class="comic-page">
+
+                        <a href="images/4.png" target="_blank">
+
+                            <img src="images/4.png" alt="Comic page 4">
+
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- HIDDEN COMIC PAGES -->
+
+                <div class="hidden-gallery" id="more-oc-comics">
+
+                    <div class="comic-gallery">
+
+
+                        <article class="comic-page">
+
+                            <a href="images/5.png" target="_blank">
+
+                                <img src="images/5.png" alt="Comic page 5">
+
+                            </a>
+
+                        </article>
+
+
+                        <article class="comic-page">
+
+                            <a href="images/6.png" target="_blank">
+
+                                <img src="images/6.png" alt="Comic page 6">
+
+                            </a>
+
+                        </article>
+
+                        <article class="comic-page">
+
+                            <a href="images/7.png" target="_blank">
+
+                                <img src="images/7.png" alt="Comic page 7">
+
+                            </a>
+
+                        </article>
+
+                        <article class="comic-page">
+
+                            <a href="images/8.png" target="_blank">
+
+                                <img src="images/8.png" alt="Comic page 8">
+
+                            </a>
+
+                        </article>
+
+
+                        <!-- ADD MORE COMIC PAGES HERE -->
+
+
+                    </div>
+
+                </div>
+
+
+                <button class="see-more" onclick="showMore('more-oc-comics', this)">
+                    see more
+                </button>
+
+
+            </section>
+
+
+
+            <!-- FOOTER -->
+
+            <footer>
+
+                <p>
+                    made with love & too much time
+                </p>
+
+                <p>☙ ✦ ❧</p>
+
+            </footer>
 
 
     </main>
+
+
+
+    <!-- SEE MORE SCRIPT -->
+
+    <script>
+
+        function showMore(sectionId, button) {
+
+            const section =
+                document.getElementById(sectionId);
+
+            section.style.display = "block";
+
+            button.style.display = "none";
+
+        }
+
+    </script>
+
 
 </body>
 
