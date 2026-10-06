@@ -1321,3 +1321,17 @@ footer {
     }
 
 }
+
+/* ---------- OC PORTRAIT ---------- */
+
+.oc-portrait {
+    text-align: center;
+}
+
+.oc-portrait img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
